@@ -17,6 +17,8 @@ export function FriendList({ friends }) {
 FriendList.defaultProps = {
   avatar: 'Avatar',
   name: 'Name',
+  isOnline: '',
+  id: '',
 };
 FriendList.propTypes = {
   friends: PropTypes.arrayOf(

@@ -1,18 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from '../socialProfile/profile.module.css';
+
 import { ProfileDescription } from './ProfileDescription/ProfileDescription.js';
 import { ProfileStatistics } from './ProfileStatistics/ProfileStatistics.js';
 
 export function Profile({ name, tag, location, avatar, stats }) {
   return (
-    <div>
+    <div className={styles.description}>
       <ProfileDescription
         name={name}
         tag={tag}
         location={location}
         avatar={avatar}
       />
-      <ul>
+      <ul className>
         <ProfileStatistics stats={stats} />
       </ul>
     </div>
@@ -35,5 +37,3 @@ Profile.propTypes = {
     likes: PropTypes.number.isRequired,
   }),
 };
-
-// export default Profile;

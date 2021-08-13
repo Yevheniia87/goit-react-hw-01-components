@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from '../ProfileStatistics/profileStatistics.module.css';
 
 export function ProfileStatistics({ stats }) {
   return (
     <>
-      <li>
+      <li className={styles.items}>
         <span className="label">Followers</span>
         <span className="quantity">{stats.followers}</span>
       </li>

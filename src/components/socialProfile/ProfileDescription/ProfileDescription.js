@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from '../ProfileDescription/profileDescription.module.css';
 export function ProfileDescription({ name, tag, location, avatar }) {
   return (
-    <div className="description">
+    <div className={styles.description}>
       <img
         src={avatar}
         alt="Аватар пользователя"
