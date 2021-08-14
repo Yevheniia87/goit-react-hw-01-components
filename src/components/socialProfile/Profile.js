@@ -7,14 +7,14 @@ import { ProfileStatistics } from './ProfileStatistics/ProfileStatistics.js';
 
 export function Profile({ name, tag, location, avatar, stats }) {
   return (
-    <div className={styles.description}>
+    <div className={styles.profile}>
       <ProfileDescription
         name={name}
         tag={tag}
         location={location}
         avatar={avatar}
       />
-      <ul className>
+      <ul className={styles.stats}>
         <ProfileStatistics stats={stats} />
       </ul>
     </div>

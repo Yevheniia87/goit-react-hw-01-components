@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from '../statistical/statistical.module.css';
 import { StatisticalData } from '../statistical/StatisticalData/StatisticalData';
 
 export function Statistical({ title, stats }) {
   return (
-    <section>
-      {title ? <h2>{title}</h2> : null}
+    <section className={styles.statistics}>
+      {title ? <h2 className={styles.title}>{title}</h2> : null}
       <StatisticalData stats={stats} />
     </section>
   );

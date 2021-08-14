@@ -1,0 +1,9 @@
+.statistics {
+  margin: 0 auto;
+  border: 1px solid grey;
+  text-align: center;
+  width: 350px;
+}
+.title {
+  text-transform: uppercase;
+}
