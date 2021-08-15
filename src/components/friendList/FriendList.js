@@ -5,11 +5,9 @@ import styles from '../friendList/friendList.module.css';
 export function FriendList({ friends }) {
   return (
     <ul className={styles.friendList}>
-      {friends.map(({ avatar, name, isOnline, id }) => (
+      {friends.map(({ avatar, name, id, isOnline }) => (
         <li className={styles.item} key={id}>
-          <span className={styles.status}>
-            {isOnline ? styles.Online : styles.Offline}
-          </span>
+          <span className={isOnline ? styles.online : styles.offline}></span>
           <img className={styles.avatar} src={avatar} alt="" width="48" />
           <p className={styles.name}>{name}</p>
         </li>
@@ -20,8 +18,6 @@ export function FriendList({ friends }) {
 FriendList.defaultProps = {
   avatar: 'Avatar',
   name: 'Name',
-  isOnline: '',
-  id: '',
 };
 FriendList.propTypes = {
   friends: PropTypes.arrayOf(

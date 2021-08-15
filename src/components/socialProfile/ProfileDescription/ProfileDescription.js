@@ -13,8 +13,6 @@ export function ProfileDescription({ name, tag, location, avatar }) {
 }
 ProfileDescription.defaultProps = {
   name: 'Name',
-  tag: 'Tag',
-  location: 'Location',
   avatar: 'Avatar',
 };
 ProfileDescription.propTypes = {

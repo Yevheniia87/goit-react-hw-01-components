@@ -25,7 +25,6 @@ export function TransactionHistory({ items }) {
   );
 }
 TransactionHistory.defaultProps = {
-  id: '',
   type: 'Type',
   amount: 'Amount',
   currency: 'Currency',

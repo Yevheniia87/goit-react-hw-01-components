@@ -22,8 +22,6 @@ export function Profile({ name, tag, location, avatar, stats }) {
 }
 Profile.defaultProps = {
   name: 'Name',
-  tag: 'Tag',
-  location: 'Location',
   avatar: 'Avatar',
 };
 Profile.propTypes = {
